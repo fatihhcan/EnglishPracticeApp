@@ -1,7 +1,7 @@
 import 'package:englishPracticeApp/view/home_view.dart';
 import 'package:englishPracticeApp/view/splash_view.dart';
 import 'package:flutter/material.dart';
-import 'view/quiz_view2.dart';
+import 'view/quiz_view.dart';
 
 void main() => runApp(MyApp());
 

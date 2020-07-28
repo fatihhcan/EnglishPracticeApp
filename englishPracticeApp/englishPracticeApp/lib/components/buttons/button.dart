@@ -2,8 +2,6 @@ import 'package:englishPracticeApp/components/style/color/colors.dart';
 import 'package:englishPracticeApp/components/style/text/text_style.dart';
 import 'package:flutter/material.dart';
 
-import '../style/color/colors.dart';
-
 class StartButton extends StatelessWidget {
   const StartButton({Key key}) : super(key: key);
 
@@ -87,15 +85,18 @@ class PlayButton extends StatelessWidget {
 }
 
 class QuizButton extends StatelessWidget {
-  const QuizButton({Key key}) : super(key: key);
+  const QuizButton({Key key, this.onPressed}) : super(key: key);
 
+  final Function(int index) onPressed;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 50,
       width: 250,
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: () {
+          this.onPressed(1);
+        },
         child: Text(
           "kazanmak",
           style: TextStyle(
