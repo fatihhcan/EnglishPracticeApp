@@ -1,27 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-class MyApp extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  LoginPage({Key key}) : super(key: key);
+
   @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: new MyHomePage(),
-    );
-  }
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  //String _email, _password;
-  // final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return Scaffold(
       resizeToAvoidBottomPadding: false,
       backgroundColor: Color(0xFF2E425A),
       body: Column(
